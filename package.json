@@ -1,0 +1,27 @@
+{
+  "name": "react-coding-interview",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "codegen": "graphql-codegen --config codegen.ts"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.9.7",
+    "eslint": "^8.50.0",
+    "eslint-config-custom": "*",
+    "prettier": "^2.8.8",
+    "turbo": "latest",
+    "typescript": "^5.1.6"
+  },
+  "packageManager": "npm@8.11.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "typescript": "^4.9.5"
+  }
+}

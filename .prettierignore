@@ -1,0 +1,14 @@
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+package-lock.json
+package.json
+
+app/.next/
+app/out
+app/build
+api/_dist
+api/dist
+**/coverage
+

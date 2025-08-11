@@ -1,0 +1,24 @@
+{
+  "name": "react-coding-interview-shared",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "rimraf _dist && tsc"
+  },
+  "exports": {
+    ".": "./_dist/index.js",
+    "./models": "./_dist/models/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      "models": [
+        "./_dist/models/index.d.ts"
+      ]
+    }
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*"
+  }
+}
