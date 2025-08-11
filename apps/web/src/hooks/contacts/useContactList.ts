@@ -30,7 +30,7 @@ export function useContactList(pageSize = 20): ContactListResult {
 
       setState({
         fetching: false,
-        hasMore: resp.totalCount > 0,
+        hasMore: newContacts.length < resp.totalCount,
         contacts: { data: newContacts, totalCount: resp.totalCount },
         currentPage: nextPage,
       });
